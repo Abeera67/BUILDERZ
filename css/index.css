@@ -2,9 +2,11 @@
   position: relative;
   text-decoration: solid;
   text-align: center;
+  margin-top: 30px;
+  padding-top: 30px;
 }
 .carousel-inner{
-  height: 75vh;
+  height: 50vh;
 }
 .top-heading{
   padding-top: 15px;
@@ -227,6 +229,62 @@ color: #fff;
   text-align: center;
 }
 /*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding: 140px 0 60px 0;
+  min-height: 30vh;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.breadcrumbs:before {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  inset: 0;
+}
+
+.breadcrumbs h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #fff;
+  font-family: var(--font-secondary);
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.breadcrumbs ol a {
+  color: rgba(255, 255, 255, 0.8);
+  transition: 0.3s;
+}
+
+.breadcrumbs ol a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs ol li+li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li+li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #fff;
+  content: "/";
+}
+/*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
 .services .service-item {
@@ -256,14 +314,13 @@ color: #fff;
   content: "";
   height: 100%;
   width: 100%;
-  background: #eeea00;
+  background: #f0f1f2;
   border-radius: 50px;
   z-index: 1;
   top: 10px;
   right: -15px;
   transition: 0.3s;
 }
-
 .services .service-item h3 {
   color: var(--color-default);
   font-weight: 700;
@@ -272,7 +329,7 @@ color: #fff;
   font-size: 22px;
   position: relative;
   display: inline-block;
-  border-bottom: 4px solid #eeea00;
+  border-bottom: 4px solid #ebebed;
   transition: 0.3s;
 }
 
@@ -998,6 +1055,6 @@ color: #fff;
     transform: rotate(360deg);
   }
 }
-/* .bi{
+ .bi-color{
   color: #eeea00;
-} */
+}  
