@@ -5,6 +5,12 @@
   margin-top: 30px;
   padding-top: 30px;
 }
+.my-nav{
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+  }
+  
 .carousel-inner{
   height: 50vh;
 }
